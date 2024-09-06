@@ -3,16 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Web Page</title>
+    <title>Stuart McGill home</title>
+    <meta name="description" content="Home page of Stuart McGill, with links to his personal projects on the Cicipu language and also sumo-related web applications">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
 </head>
-<body class="bg-gray-100">
+<body>
     <div class="container mx-auto px-4">
         <header class="my-8 text-center">
-            <h1 class="text-4xl font-bold text-gray-800">Home</h1>
-            <p class="mt-2 text-gray-600">Welcome</p>
+            <h1 class="text-4xl">Stuart McGill homepage</h1>
         </header>
-        <main>
+        <main class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="rounded border border-1 border-purple-100 hover:border-purple-500 cursor-pointer overflow-hidden self-start">
+                    <a href="https://cicipu.stuartmcgill.org">
+                    <h2 class="p-4 text-2xl bg-purple-50">Cicipu language</h2>
+                    <img class="w-full rounded-b opacity-60" src="image/cicipu.jpg">
+                    </a>
+                </div>
+                <div class="rounded border border-1 border-purple-100 overflow-hidden">
+                    <h2 class="p-4 text-2xl bg-purple-50">Sumo</h2>
+                    <div class="flex flex-col gap-4">
+                        <a href="https://sumo.stuartmcgill.org/head2head" class="m-4 p-4 rounded border border-1 border-purple-100 hover:border-purple-500 cursor-pointer overflow-hidden">
+                            <div>Makuuchi (top division) head-2-head visualisation</div>
+                            <img class="w-full rounded-b opacity-60" src="image/head2head.jpg">
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <a href="https://sumo.stuartmcgill.org/kimarite" class="m-4 rounded border border-1 border-purple-100 hover:border-purple-500 cursor-pointer overflow-hidden">
+                            <div class="p-4">
+                            <div>Longitudinal kimarite (winning techniques) visualisation</div>
+                            <i class="mt-4 text-xs">Under preparation</i>
+                            </div>
+                            <img class="w-full rounded-b opacity-60" src="image/kimarite.jpg">
+                            <i class="p-4 text-xs">Source: Asahi Shimbun Jar Photo Masterpiece Collection 1954</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="mt-8 text-center">
             <p class="text-gray-600">© 2024</p>
